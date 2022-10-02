@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form validation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="text-green text-center font-weight-bold">Form Validation In JavaScript</h1>
+    <h4 class="text-blue text-center font-weight-bold">Sign Up</h4>
+    <div class="container">
+      <div class="col-lg-5 m-auto d-block">
+        <form action="#" onsubmit="return validation()" class="bg-light">
+          <div class="form-group">
+            <label for="name" class="">Name</label>
+            <input type="text" name="name" class="form-control" id="name" autocomplete="off">
+            <span id="Name" class="text-danger font-weight-regular"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control" id="emails">
+            <span id="emailids" class="text-danger font-weight-regular"></span>
+          </div>
+          <div class="form-group">
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" class="form-control" autocomplete="off">
+            <span id="username" class="text-danger font-weight-regular"></span></span>
+          </div>
+          <div class="form-group">
+            <label for="pass" class="font-weight-regular">password</label>
+            <input type="password" name="pass" id="pass" class="form-control" autocomplete="off">
+            <span id="passwords" class="text-danger font-weight-regular"></span></span>
+          </div>
+          <div class="form-group">
+            <label for="conpass" class="font-weight-regular">Confirmed password</label>
+            <input type="password" name="conpass" id="conpass" class="form-control" autocomplete="off">
+            <span id="confrmpass" class="text-danger font-weight-regular"></span></span>
+          </div>
+          <div class="form-group">
+            <label for="" class="font-weight-regular">Mobile Number</label>
+            <input type="text" name="mobile" id="mobileNumber" class="form-control" autocomplete="off">
+            <span id="mobileno" class="text-danger font-weight-regular"></spanid></span>
+          </div>
+          <input type="submit" name="submit" class="btn btn-primary" value="Submit" name="submit" value="submit" autocomplete="off">
+          <input type="reset" value="Reset" class="btn btn-secondary" name="reset" autocomplete="off">
+          &emsp;&emsp;&emsp;Already have an account?
+          <a href="login.html">Login</a>
+        </form>
+        <br><br>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
